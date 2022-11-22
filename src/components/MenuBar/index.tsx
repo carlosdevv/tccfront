@@ -29,7 +29,7 @@ const MenuBar: React.FC = () => {
         </MenuButton>
 
         <Button>
-          <span>Tweetar</span>
+          <span>Postar</span>
         </Button>
       </Topside>
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 
 import { Container, Avatar, Info, FollowButton } from './styles';
 
@@ -8,6 +8,12 @@ interface Props {
 }
 
 const FollowSuggestion: React.FC<Props> = ({ name, nickname }) => {
+  const [isFollowing, setIsFollowing] = useState<boolean>(false);
+
+  const handleFollow = useCallback(() => {
+    setIsFollowing((prevState) => !prevState);
+  }, []);
+
   return (
     <Container>
       <div>
@@ -19,7 +25,9 @@ const FollowSuggestion: React.FC<Props> = ({ name, nickname }) => {
         </Info>
       </div>
 
-      <FollowButton outlined>Seguir</FollowButton>
+      <FollowButton outlined={!isFollowing} onClick={handleFollow}>
+        {isFollowing ? 'Seguindo' : 'Seguir'}
+      </FollowButton>
     </Container>
   );
 };
