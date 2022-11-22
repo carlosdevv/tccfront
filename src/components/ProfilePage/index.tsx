@@ -10,7 +10,6 @@ import {
   LocationIcon,
   CakeIcon,
   Followage,
-  EditButton,
 } from './styles';
 
 const ProfilePage: React.FC = () => {

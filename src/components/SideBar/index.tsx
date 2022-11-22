@@ -20,20 +20,7 @@ const SideBar: React.FC = () => {
               <FollowSuggestion name="Verman Benja" nickname="@benjaschult" />,
             ]}
           />
-          {/* <List
-            title="O que está acontecendo"
-            elements={[
-              <News />,
-              <News />,
-              <News />,
-              <News />,
-              <News />,
-              <News />,
-              <News />,
-              <News />,
-              <News />,
-            ]}
-          /> */}
+          <List title="O que está acontecendo" elements={[<News />]} />
         </Body>
       </StickyBox>
     </Container>
