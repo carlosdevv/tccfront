@@ -2,6 +2,15 @@
 TCC - Frontend
 </h1>
 
+## Prints
+### Login Page
+![Login](login_print.png)
+<br />
+<br />
+
+### Home Page
+![Home](home_print.png)
+
 ## Participants
 
 - Antonio Carlos
