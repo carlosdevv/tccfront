@@ -11,14 +11,17 @@ TCC - Frontend
 
 ## Techs
 
+
 - [x] React.js
 - [x] Styled Components
 - [x] TypeScript
 
 ## Usage
 
-1. Run `npm install` or `yarn install`.<br />
-2. Run `yarn start` and access `http://localhost:3000`.<br />
+0. Necessário ter node instalado.
+01. Acesse a pasta do projeto via terminal.
+02. Rode `npm install` ou `yarn install`.<br />
+03. Rode `yarn start` e acesse `http://localhost:3000`.<br />
 
 ## Contributing
 
