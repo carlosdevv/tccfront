@@ -12,12 +12,17 @@ import {
   Avatar,
   ProfileData,
   ExitIcon,
+  LogoApp,
 } from './styles';
+
+import logoApp from '../../assets/logo.svg';
 
 const MenuBar: React.FC = () => {
   return (
     <Container>
       <Topside>
+        <LogoApp src={logoApp} alt="logo" />
+
         <MenuButton className="active">
           <HomeIcon />
           <span>Página Inicial</span>

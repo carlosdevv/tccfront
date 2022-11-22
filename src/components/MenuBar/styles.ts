@@ -7,7 +7,6 @@ import {
   FavoriteBorder,
   Person,
   ExitToApp,
-  Rocketseat,
 } from '../../styles/Icons';
 
 export const Container = styled.div`
@@ -29,6 +28,11 @@ export const Container = styled.div`
   }
 `;
 
+export const LogoApp = styled.img`
+  width: 30%;
+  margin-bottom: 0.75rem;
+`;
+
 export const Topside = styled.div`
   display: flex;
   flex-direction: column;
@@ -37,17 +41,6 @@ export const Topside = styled.div`
   @media (min-width: 1280px) {
     align-items: flex-start;
   }
-`;
-
-export const Logo = styled(Rocketseat)`
-  width: 41px;
-  height: 41px;
-
-  > path {
-    fill: var(--twitter);
-  }
-
-  margin-bottom: 20px;
 `;
 
 export const MenuButton = styled.button`
