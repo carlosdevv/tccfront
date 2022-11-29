@@ -2,6 +2,8 @@ import React from 'react';
 
 import Feed from '../Feed';
 
+import TikoImg from '../../assets/tiko.jpeg';
+
 import {
   Container,
   Banner,
@@ -16,17 +18,14 @@ const ProfilePage: React.FC = () => {
   return (
     <Container>
       <Banner>
-        <Avatar />
+        <Avatar src={TikoImg} alt="myPhoto" />
       </Banner>
 
       <ProfileData>
-
         <h1>Tiko Lopes</h1>
         <h2>@tiko.lo</h2>
 
-        <p>
-          Developer at Inter
-        </p>
+        <p>Developer at Inter</p>
 
         <ul>
           <li>

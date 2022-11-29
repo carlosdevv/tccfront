@@ -28,7 +28,8 @@ export const Body = styled.div`
   position: relative;
 `;
 
-export const Avatar = styled.div`
+export const Avatar = styled.img`
+  object-fit: cover;
   width: 49px;
   height: 49px;
   border-radius: 50%;
@@ -99,10 +100,10 @@ export const ImageContent = styled.div`
 
 export const Icons = styled.div`
   display: flex;
+  gap: 5rem;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
-  margin: 11px auto 0;
+  margin-top: 11px;
   width: 100%; /** Mobile */
 
   @media (min-width: 330px) {

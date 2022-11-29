@@ -2,12 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../Button';
 
+import TikoImg from '../../assets/tiko.jpeg';
+
 import {
   Container,
   Topside,
   MenuButton,
   HomeIcon,
-  ProfileIcon,
   Botside,
   Avatar,
   ProfileData,
@@ -28,18 +29,13 @@ const MenuBar: React.FC = () => {
           <span>Página Inicial</span>
         </MenuButton>
 
-        <MenuButton>
-          <ProfileIcon />
-          <span>Perfil</span>
-        </MenuButton>
-
         <Button>
-          <span>Postar</span>
+          <span>Criar Post</span>
         </Button>
       </Topside>
 
       <Botside>
-        <Avatar />
+        <Avatar src={TikoImg} alt="photo" />
 
         <ProfileData>
           <strong>Tiko Lopes</strong>

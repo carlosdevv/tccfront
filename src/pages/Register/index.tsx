@@ -1,15 +1,15 @@
 import React, { useCallback } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import IllustrationImg from '../../assets/illustration.svg';
 import logoImg from '../../assets/logo.svg';
 
 import * as S from './styles';
 
-const Login: React.FC = () => {
+const Register: React.FC = () => {
   const history = useHistory();
 
-  const redirectToFeed = useCallback(() => {
-    history.push('/home');
+  const redirectToLogin = useCallback(() => {
+    history.push('/');
   }, [history]);
 
   return (
@@ -26,12 +26,12 @@ const Login: React.FC = () => {
           <S.Content>
             <img src={logoImg} alt="logo" />
             <S.Separator className="separator">
-              Faça seu login na plataforma
+              Faça seu cadastro na plataforma
             </S.Separator>
-            <S.Button onClick={() => redirectToFeed()}>ENTRAR</S.Button>
-            <span>
-              Não tem conta? <Link to="/register">registre-se</Link>
-            </span>
+            <S.Input placeholder="Nome" />
+            <S.Input placeholder="Senha" type="password" />
+            <S.Input placeholder="Data de nascimento" type="date" />
+            <S.Button onClick={() => redirectToLogin()}>Registrar</S.Button>
           </S.Content>
         </S.MainContainer>
       </S.Container>
@@ -39,4 +39,4 @@ const Login: React.FC = () => {
   );
 };
 
-export default Login;
+export default Register;

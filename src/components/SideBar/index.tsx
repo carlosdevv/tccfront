@@ -5,6 +5,10 @@ import List from '../List';
 import FollowSuggestion from '../FollowSuggestion';
 import News from '../News';
 
+import LuizImg from '../../assets/lip.jpg';
+import BermaImg from '../../assets/berma.jpg';
+import MarcoImg from '../../assets/marco.jpg';
+
 import { Container, Body } from './styles';
 
 const SideBar: React.FC = () => {
@@ -15,9 +19,21 @@ const SideBar: React.FC = () => {
           <List
             title="Talvez você conheça"
             elements={[
-              <FollowSuggestion name="Luiz Felipe" nickname="@luizfel" />,
-              <FollowSuggestion name="Marcony Jefferson" nickname="@marcony" />,
-              <FollowSuggestion name="Verman Benja" nickname="@benjaschult" />,
+              <FollowSuggestion
+                img={LuizImg}
+                name="Luiz Felipe"
+                nickname="@luizfel"
+              />,
+              <FollowSuggestion
+                img={MarcoImg}
+                name="Marcony Jefferson"
+                nickname="@marcony"
+              />,
+              <FollowSuggestion
+                img={BermaImg}
+                name="Verman Benja"
+                nickname="@benjaschult"
+              />,
             ]}
           />
           <List title="O que está acontecendo" elements={[<News />]} />

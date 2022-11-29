@@ -47,6 +47,7 @@ export const MenuButton = styled.button`
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  margin-top: 1rem;
 
   > span {
     display: none;
@@ -139,7 +140,8 @@ export const Botside = styled.div`
   align-items: center;
 `;
 
-export const Avatar = styled.div`
+export const Avatar = styled.img`
+  object-fit: cover;
   width: 39px;
   height: 39px;
 

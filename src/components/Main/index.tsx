@@ -20,7 +20,7 @@ const Main: React.FC = () => {
 
         <ProfileInfo>
           <strong>Tiko Lopes</strong>
-          <span>612 Posts</span>
+          <span>3 Posts</span>
         </ProfileInfo>
       </Header>
 

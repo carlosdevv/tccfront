@@ -27,7 +27,9 @@ export const Banner = styled.div`
   position: relative;
 `;
 
-export const Avatar = styled.div`
+export const Avatar = styled.img`
+  object-fit: cover;
+
   width: max(45px, min(135px, 22vw));
   height: max(45px, min(135px, 22vw));
 

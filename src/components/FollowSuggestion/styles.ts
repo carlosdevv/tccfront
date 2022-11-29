@@ -13,7 +13,8 @@ export const Container = styled.div`
   }
 `;
 
-export const Avatar = styled.div`
+export const Avatar = styled.img`
+  object-fit: cover;
   width: 49px;
   height: 49px;
   background: var(--gray);

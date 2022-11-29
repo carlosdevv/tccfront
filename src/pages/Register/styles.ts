@@ -1,9 +1,25 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
   align-items: stretch;
   height: 100vh;
+`;
+
+export const Input = styled.input`
+  margin-bottom: 1rem;
+  height: 50px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #fff;
+  background: var(--search);
+  border: 1px solid var(--twitter);
+  padding: 0 1rem;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Aside = styled.aside`
@@ -24,7 +40,7 @@ export const Aside = styled.aside`
   }
 
   strong {
-    font: 700 36px "Poppins", sans-serif;
+    font: 700 36px 'Poppins', sans-serif;
     line-height: 42px;
     margin-top: 16px;
   }
@@ -56,7 +72,7 @@ export const Separator = styled.div`
   align-items: center;
 
   &::before {
-    content: "";
+    content: '';
     flex: 1;
     height: 1px;
     background: #a8a8b3;
@@ -64,7 +80,7 @@ export const Separator = styled.div`
   }
 
   &::after {
-    content: "";
+    content: '';
     flex: 1;
     height: 1px;
     background: #a8a8b3;
@@ -80,10 +96,6 @@ export const Content = styled.div`
   align-items: stretch;
   text-align: center;
 
-  span {
-    margin-top: 2rem;
-  }
-
   > img {
     align-self: center;
   }
@@ -91,7 +103,7 @@ export const Content = styled.div`
   h2 {
     font-size: 24px;
     margin: 64px 0 24px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 
   p {
@@ -106,6 +118,7 @@ export const Content = styled.div`
 `;
 
 export const Button = styled.button`
+  margin-top: 1rem;
   height: 50px;
   border-radius: 8px;
   font-weight: 500;
