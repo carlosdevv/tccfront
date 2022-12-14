@@ -1,5 +1,6 @@
 export {
   Home,
+  Close,
   Notifications,
   Email,
   FavoriteBorder,

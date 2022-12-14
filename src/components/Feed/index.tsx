@@ -8,8 +8,6 @@ import { Container, Tab, Posts } from './styles';
 const Feed: React.FC = () => {
   const { postList } = usePostContext();
 
-  console.log(postList.length);
-
   return (
     <Container>
       <Tab>Postagens</Tab>

@@ -7,6 +7,7 @@ import {
   FavoriteBorder,
   Person,
   ExitToApp,
+  Close,
 } from '../../styles/Icons';
 
 export const Container = styled.div`
@@ -182,6 +183,84 @@ export const ExitIcon = styled(ExitToApp)`
       > path {
         color: var(--twitter);
       }
+    }
+  }
+`;
+
+export const ContentModal = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  gap: 1.5rem;
+  width: 100%;
+  height: 100%;
+`;
+
+export const CommentWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.75rem;
+`;
+
+export const PostButton = styled.button`
+  margin-left: auto;
+  margin-top: auto;
+  background: var(--twitter);
+  color: var(--white);
+  border: none;
+  width: 91px;
+
+  padding: 12px;
+  border-radius: 25px;
+
+  font-weight: bold;
+  font-size: 15px;
+
+  cursor: pointer;
+  outline: 0;
+
+  &:hover {
+    background: var(--twitter-light-hover);
+  }
+`;
+
+export const AvatarModal = styled.img`
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+  background: var(--gray);
+`;
+
+export const Input = styled.textarea`
+  border: none;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+
+  &::placeholder {
+    font-weight: bold;
+    color: var(--white);
+  }
+`;
+
+export const CloseIcon = styled(Close)`
+  display: none;
+
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  color: var(--white);
+  cursor: pointer;
+
+  &:hover {
+    > path {
+      color: var(--twitter);
     }
   }
 `;
